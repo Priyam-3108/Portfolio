@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Priyam Mansuriya - Full Stack Developer & Problem Solver. Portfolio showcasing web development projects, skills in React, Laravel, Python, and cloud computing.">
+    <meta name="keywords"
+        content="Full Stack Developer, Web Developer, Portfolio, React, Laravel, Python, Cloud Computing, Priyam Mansuriya">
+    <meta name="author" content="Priyam Mansuriya">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Priyam Mansuriya - Full Stack Developer Portfolio">
+    <meta property="og:description"
+        content="Full Stack Developer specializing in web development, problem solving, and cloud computing">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Priyam Mansuriya - Full Stack Developer Portfolio</title>
+</head>
+
+<body>
+    <!-- Navigation Header -->
+    <header>
+        <nav id="navbar" role="navigation" aria-label="Main navigation">
+            <div class="logo" aria-label="Portfolio Logo">
+                Priyam's<span class="folio">Portfolio</span>
+                <div class="dot">.</div>
+            </div>
+            <ul id="navitems" class="navitems">
+                <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <li><a href="#skill" onclick="closeMenu()">Skills</a></li>
+                <li><a href="#work" onclick="closeMenu()">Work</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+            </ul>
+            <button class="nev-menu" onclick="toggleMenu()" aria-label="Toggle navigation menu" aria-expanded="false">
+                <i class="fa fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" aria-label="Hero section">
+            <div class="home">
+                <div class="intro0">
+                    <span class="topline">Hello</span>
+                    <h1 class="intro-h1">I'm <span class="multiText">learner</span></h1>
+                    <h2 class="intro-name">Priyam <span>Mansuriya</span></h2>
+                    <p class="intro-p">
+                        I am a full-time employee at Crest Infosystems Pvt. Ltd. as a Full Stack Developer.
+                        I like to solve competitive problems and I am a quick learner passionate about creating
+                        amazing web experiences.
+                    </p>
+                    <div class="btns">
+                        <a href="200430116028.pdf" target="_blank" rel="noopener noreferrer"
+                            aria-label="Download Resume">
+                            <i class="fas fa-download"></i> Resume
+                        </a>
+                        <a href="#contact" aria-label="Contact me">
+                            <i class="fas fa-envelope"></i> Get In Touch
+                        </a>
+                    </div>
+                </div>
+                <div class="intro1">
+                    <div class="imgbox">
+                        <figure class="person" aria-label="Profile picture">
+                            <div>
+                                <img src="image/transparent.png" alt="Priyam Mansuriya - Full Stack Developer"
+                                    loading="lazy">
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider" aria-hidden="true">
+
+        <!-- About Section -->
+        <section id="about" aria-labelledby="about-heading">
+            <div class="about">
+                <h2 id="about-heading"><span>.</span><span>.</span>About</h2>
+                <div class="about-content">
+                    <div class="about-tabs-container">
+                        <div class="about-list" role="tablist" aria-label="About sections">
+                            <button id="about-me" class="about-list-items" onclick="updateAbout(this.id)" role="tab"
+                                aria-selected="true" aria-controls="about-panel">
+                                <i class="fas fa-user"></i>
+                                <span>About</span>
+                            </button>
+                            <button id="hobby" class="about-list-items" onclick="updateAbout(this.id)" role="tab"
+                                aria-selected="false" aria-controls="about-panel">
+                                <i class="fas fa-heart"></i>
+                                <span>Hobbies</span>
+                            </button>
+                            <button id="education" class="about-list-items" onclick="updateAbout(this.id)" role="tab"
+                                aria-selected="false" aria-controls="about-panel">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Education</span>
+                            </button>
+                            <button id="achivements" class="about-list-items" onclick="updateAbout(this.id)" role="tab"
+                                aria-selected="false" aria-controls="about-panel">
+                                <i class="fas fa-trophy"></i>
+                                <span>Achievements</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="about-description-card">
+                        <div class="about-discription" id="about-panel" role="tabpanel" aria-live="polite">
+                            <ul>
+                                <li>
+                                    <div class="about-detail1" id="detail1">IT Engineer</div>
+                                </li>
+                                <li>
+                                    <div class="about-detail2" id="detail2">Developer and Problem Solver</div>
+                                </li>
+                                <li>
+                                    <div class="about-detail3" id="detail3">I like to play outdoor games</div>
+                                </li>
+                                <li>
+                                    <div class="about-detail4" id="detail4">
+                                        I am a 4th year IT engineering student from SSGEC Bhavnagar.
+                                        I like to solve competitive problems. I am a quick learner.
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider" aria-hidden="true">
+
+        <!-- Skills Section -->
+        <section id="skill" aria-labelledby="skills-heading">
+            <div class="skills-container">
+                <div class="skills-h1">
+                    <h2 id="skills-heading"><span>.</span><span>.</span>Skills & Expertise</h2>
+                    <p class="skills-subtitle">Technologies and tools I work with</p>
+                </div>
+
+                <!-- Main Skills Grid -->
+                <div class="skills">
+                    <article class="skill-box">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="skill-title">Data Science & Programming</h3>
+                        </div>
+                        <p class="skill-description">
+                            3 star coder on LeetCode with 500+ problems solved across all difficulty levels.
+                            Strong foundation in algorithms and data structures.
+                        </p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">DSA</span>
+                        </div>
+                        <div class="skill-level">
+                            <div class="skill-level-bar" style="--skill-width: 85%"></div>
+                        </div>
+                    </article>
+
+                    <article class="skill-box">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="skill-title">Web Development & Design</h3>
+                        </div>
+                        <p class="skill-description">
+                            Full stack web developer and part-time freelancer specializing in creating
+                            responsive and user-friendly web applications.
+                        </p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Laravel</span>
+                        </div>
+                        <div class="skill-level">
+                            <div class="skill-level-bar" style="--skill-width: 90%"></div>
+                        </div>
+                    </article>
+
+                    <article class="skill-box">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i class="fa-solid fa-cloud" aria-hidden="true"></i>
+                            </div>
+                            <h3 class="skill-title">Cloud Computing & Services</h3>
+                        </div>
+                        <p class="skill-description">
+                            Certified in Google Cloud Platform with expertise in building scalable
+                            cloud infrastructure and deployment strategies.
+                        </p>
+                        <div class="skill-tags">
+                            <span class="skill-tag">GCP</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">CI/CD</span>
+                        </div>
+                        <div class="skill-level">
+                            <div class="skill-level-bar" style="--skill-width: 75%"></div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Additional Skills -->
+                <div class="additional-skills">
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-tools"></i>
+                            <h3>Tools & Technologies</h3>
+                        </div>
+                        <div class="skill-badges">
+                            <span class="badge">Canva</span>
+                            <span class="badge">Photoshop</span>
+                            <span class="badge">Figma</span>
+                            <span class="badge">MySQL</span>
+                            <span class="badge">Git</span>
+                            <span class="badge">VS Code</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Currently Learning</h3>
+                        </div>
+                        <div class="skill-badges learning">
+                            <span class="badge">React JS</span>
+                            <span class="badge">Python</span>
+                            <span class="badge">Laravel</span>
+                            <span class="badge">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider" aria-hidden="true">
+
+        <!-- Projects Section -->
+        <section id="work" aria-labelledby="work-heading">
+            <div class="projects-container">
+                <div class="work-h1">
+                    <h2 id="work-heading"><span>.</span><span>.</span>Featured Projects</h2>
+                    <p class="projects-subtitle">Some of my recent work</p>
+                </div>
+
+                <div class="all-projects">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="https://d1tae6lrnvfibh.cloudfront.net/features/feature30082024_141406.png"
+                                alt="Portfolio Website Project" class="project-image" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <a href="#" class="overlay-btn" target="_blank" rel="noopener noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="https://github.com/" class="overlay-btn" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <span class="project-category">Web Development</span>
+                                <span class="project-status">Completed</span>
+                            </div>
+                            <h3 class="project-title">Portfolio Website</h3>
+                            <p class="project-description">
+                                A modern, responsive portfolio website built with pure HTML, CSS, and JavaScript.
+                                Features smooth animations, dark theme, and optimized performance.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge">HTML5</span>
+                                <span class="tech-badge">CSS3</span>
+                                <span class="tech-badge">JavaScript</span>
+                                <span class="tech-badge">Responsive</span>
+                            </div>
+                            <div class="project-footer">
+                                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/" class="project-link" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="https://d1tae6lrnvfibh.cloudfront.net/features/feature30082024_141406.png"
+                                alt="Hostel Management System" class="project-image" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <a href="#" class="overlay-btn" target="_blank" rel="noopener noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="https://github.com/" class="overlay-btn" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <span class="project-category">Full Stack</span>
+                                <span class="project-status">Completed</span>
+                            </div>
+                            <h3 class="project-title">Hostel Management System</h3>
+                            <p class="project-description">
+                                A comprehensive hostel management platform for students and administrators.
+                                Streamlines facility booking, complaints, and student information management.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge">PHP</span>
+                                <span class="tech-badge">MySQL</span>
+                                <span class="tech-badge">Bootstrap</span>
+                                <span class="tech-badge">jQuery</span>
+                            </div>
+                            <div class="project-footer">
+                                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/" class="project-link" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="https://d1tae6lrnvfibh.cloudfront.net/features/feature30082024_141406.png"
+                                alt="AI Traffic Control System" class="project-image" loading="lazy">
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <a href="#" class="overlay-btn" target="_blank" rel="noopener noreferrer">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="https://github.com/" class="overlay-btn" target="_blank"
+                                        rel="noopener noreferrer">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <span class="project-category">AI/ML</span>
+                                <span class="project-status ongoing">In Progress</span>
+                            </div>
+                            <h3 class="project-title">AI Traffic Control System</h3>
+                            <p class="project-description">
+                                An intelligent traffic management system using computer vision and machine learning
+                                to optimize traffic flow and reduce congestion in urban areas.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">OpenCV</span>
+                                <span class="tech-badge">TensorFlow</span>
+                                <span class="tech-badge">Flask</span>
+                            </div>
+                            <div class="project-footer">
+                                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/" class="project-link" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider" aria-hidden="true">
+
+        <!-- Contact Section -->
+        <section id="contact" aria-labelledby="contact-heading">
+            <div class="contact-container">
+                <div class="contact-header">
+                    <h2 id="contact-heading"><span>.</span><span>.</span>Get In Touch</h2>
+                    <p class="contact-subtitle">Let's work together on your next project</p>
+                </div>
+
+                <!-- Contact Info Cards - Horizontal -->
+                <div class="contact-info-grid">
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-card-content">
+                            <h3>Email</h3>
+                            <a href="mailto:example@gmail.com" id="contact-email">example@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-card-content">
+                            <h3>Phone</h3>
+                            <a href="tel:+910123456789" id="contact-phone">+91 0123456789</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-card-content">
+                            <h3>Location</h3>
+                            <p id="contact-location">Bhavnagar, Gujarat</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <div class="contact-form-section">
+                        <h3 class="form-title">Send Me a Message</h3>
+                        <form name="submit-to-google-sheet" id="form" aria-label="Contact form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name" class="visually-hidden">Your Name</label>
+                                    <input type="text" id="name" name="Name" placeholder="Your Name" required
+                                        aria-required="true">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email" class="visually-hidden">Your Email</label>
+                                    <input type="email" id="email" name="E-mail" placeholder="Your Email" required
+                                        aria-required="true">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="visually-hidden">Your Message</label>
+                                <textarea id="message" name="Message" rows="5" placeholder="Your Message" required
+                                    aria-required="true"></textarea>
+                            </div>
+
+                            <button type="submit" id="button" class="submit-btn">
+                                <i class="fas fa-paper-plane"></i>
+                                <span>Send Message</span>
+                            </button>
+                        </form>
+                        <span id="msg" role="status" aria-live="polite"></span>
+                    </div>
+
+                    <!-- Social Media - Moved to side -->
+                    <div class="social-media-section">
+                        <h3>Connect With Me</h3>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/dhaval-asodariya-b6a514232" target="_blank"
+                                rel="noopener noreferrer" aria-label="LinkedIn" class="social-link linkedin"
+                                id="social-linkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+                                class="social-link github" id="social-github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"
+                                class="social-link twitter" id="social-twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                                aria-label="Instagram" class="social-link instagram" id="social-instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-logo">Priyam<span>.</span></h3>
+                <p class="footer-description">
+                    Full Stack Developer passionate about creating amazing web experiences.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#work">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">UI/UX Design</a></li>
+                    <li><a href="#">Cloud Solutions</a></li>
+                    <li><a href="#">Consulting</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Get In Touch</h4>
+                <ul class="footer-contact">
+                    <li id="footer-email"><i class="fas fa-envelope"></i> example@gmail.com</li>
+                    <li id="footer-phone"><i class="fas fa-phone"></i> +91 0123456789</li>
+                    <li id="footer-location"><i class="fas fa-map-marker-alt"></i> Bhavnagar, Gujarat</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Priyam Mansuriya. All rights reserved.</p>
+            <p>Made with <i class="fas fa-heart"></i> using HTML, CSS & JavaScript</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="config.js"></script>
+    <script src="data.js"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+
+    <!-- Custom Word Rotation Animation -->
+    <script>
+        // Words to rotate through
+        const words = ["Learner", "Designer", "Coder", "Portraitist", "Video Editor"];
+        let currentIndex = 0;
+        const multiTextElement = document.querySelector('.multiText');
+
+        function rotateWord() {
+            // Add exit animation class
+            multiTextElement.classList.add('word-exit');
+
+            setTimeout(() => {
+                // Change the word
+                currentIndex = (currentIndex + 1) % words.length;
+                multiTextElement.textContent = words[currentIndex];
+
+                // Remove exit class and add enter class
+                multiTextElement.classList.remove('word-exit');
+                multiTextElement.classList.add('word-enter');
+
+                setTimeout(() => {
+                    multiTextElement.classList.remove('word-enter');
+                }, 600);
+            }, 600);
+        }
+
+        // Set initial word
+        multiTextElement.textContent = words[0];
+
+        // Start rotation
+        setInterval(rotateWord, 3000);
+    </script>
+
+    <!-- EmailJS Integration -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        if (typeof CONFIG !== 'undefined' && CONFIG.EMAILJS && CONFIG.EMAILJS.PUBLIC_KEY) {
+            emailjs.init(CONFIG.EMAILJS.PUBLIC_KEY);
+        } else {
+            console.warn('EmailJS Public Key not found in config.js');
+        }
+    </script>
+    <script>
+        const btn = document.getElementById('button');
+
+        document.getElementById('form')
+            .addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                btn.value = 'Sending...';
+                btn.textContent = 'Sending...';
+
+                const serviceID = CONFIG.EMAILJS.SERVICE_ID;
+                const templateID = CONFIG.EMAILJS.TEMPLATE_ID;
+
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then(() => {
+                        btn.value = 'submit';
+                        btn.textContent = 'Submit';
+                        document.getElementById('msg').textContent = 'Message sent successfully!';
+                        setTimeout(() => {
+                            document.getElementById('msg').textContent = '';
+                        }, 5000);
+                        this.reset();
+                    }, (err) => {
+                        btn.value = 'submit';
+                        btn.textContent = 'Submit';
+                        document.getElementById('msg').textContent = 'Failed to send message. Please try again.';
+                        console.error('EmailJS Error:', err);
+                    });
+            });
+    </script>
+</body>
+
+</html>
