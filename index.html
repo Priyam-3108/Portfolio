@@ -32,14 +32,12 @@
     <header>
         <nav id="navbar" role="navigation" aria-label="Main navigation">
             <div class="logo" aria-label="Portfolio Logo">
-                Priyam's<span class="folio">Portfolio</span>
-                <div class="dot">.</div>
+                Priyam<span class="dot">.</span>
             </div>
             <ul id="navitems" class="navitems">
                 <li><a href="#home" onclick="closeMenu()">Home</a></li>
-                <li><a href="#about" onclick="closeMenu()">About</a></li>
-                <li><a href="#skill" onclick="closeMenu()">Skills</a></li>
                 <li><a href="#work" onclick="closeMenu()">Work</a></li>
+                <li><a href="#skill" onclick="closeMenu()">Skills</a></li>
                 <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
             </ul>
             <button class="nev-menu" onclick="toggleMenu()" aria-label="Toggle navigation menu" aria-expanded="false">
@@ -54,14 +52,18 @@
         <section id="home" aria-label="Hero section">
             <div class="home">
                 <div class="intro0">
-                    <span class="topline">Hello</span>
                     <h1 class="intro-h1">I'm <span class="multiText">learner</span></h1>
                     <h2 class="intro-name">Priyam <span>Mansuriya</span></h2>
                     <p class="intro-p">
-                        I am a full-time employee at Crest Infosystems Pvt. Ltd. as a Full Stack Developer.
-                        I like to solve competitive problems and I am a quick learner passionate about creating
-                        amazing web experiences.
+                        Full Stack Developer at Crest Infosystems Pvt. Ltd. and a 4th year IT engineering
+                        student at SSGEC Bhavnagar. I solve competitive problems, ship web apps end to end,
+                        and I'm a quick learner who picks up whatever a project needs.
                     </p>
+                    <ul class="fact-strip" aria-label="Quick facts">
+                        <li><i class="fas fa-graduation-cap" aria-hidden="true"></i> SSGEC Bhavnagar, IT Engineering</li>
+                        <li><i class="fas fa-code-branch" aria-hidden="true"></i> Freelance web development</li>
+                        <li><i class="fas fa-person-hiking" aria-hidden="true"></i> Cricket, volleyball, photography</li>
+                    </ul>
                     <div class="btns">
                         <a href="200430116028.pdf" target="_blank" rel="noopener noreferrer"
                             aria-label="Download Resume">
@@ -87,210 +89,40 @@
 
         <hr class="section-divider" aria-hidden="true">
 
-        <!-- About Section -->
-        <section id="about" aria-labelledby="about-heading">
-            <div class="about">
-                <h2 id="about-heading"><span>.</span><span>.</span>About</h2>
-                <div class="about-content">
-                    <div class="about-tabs-container">
-                        <div class="about-list" role="tablist" aria-label="About sections">
-                            <button id="about-me" class="about-list-items" onclick="updateAbout(this.id)" role="tab"
-                                aria-selected="true" aria-controls="about-panel">
-                                <i class="fas fa-user"></i>
-                                <span>About</span>
-                            </button>
-                            <button id="hobby" class="about-list-items" onclick="updateAbout(this.id)" role="tab"
-                                aria-selected="false" aria-controls="about-panel">
-                                <i class="fas fa-heart"></i>
-                                <span>Hobbies</span>
-                            </button>
-                            <button id="education" class="about-list-items" onclick="updateAbout(this.id)" role="tab"
-                                aria-selected="false" aria-controls="about-panel">
-                                <i class="fas fa-graduation-cap"></i>
-                                <span>Education</span>
-                            </button>
-                            <button id="achivements" class="about-list-items" onclick="updateAbout(this.id)" role="tab"
-                                aria-selected="false" aria-controls="about-panel">
-                                <i class="fas fa-trophy"></i>
-                                <span>Achievements</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="about-description-card">
-                        <div class="about-discription" id="about-panel" role="tabpanel" aria-live="polite">
-                            <ul>
-                                <li>
-                                    <div class="about-detail1" id="detail1">IT Engineer</div>
-                                </li>
-                                <li>
-                                    <div class="about-detail2" id="detail2">Developer and Problem Solver</div>
-                                </li>
-                                <li>
-                                    <div class="about-detail3" id="detail3">I like to play outdoor games</div>
-                                </li>
-                                <li>
-                                    <div class="about-detail4" id="detail4">
-                                        I am a 4th year IT engineering student from SSGEC Bhavnagar.
-                                        I like to solve competitive problems. I am a quick learner.
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <hr class="section-divider" aria-hidden="true">
-
-        <!-- Skills Section -->
-        <section id="skill" aria-labelledby="skills-heading">
-            <div class="skills-container">
-                <div class="skills-h1">
-                    <h2 id="skills-heading"><span>.</span><span>.</span>Skills & Expertise</h2>
-                    <p class="skills-subtitle">Technologies and tools I work with</p>
-                </div>
-
-                <!-- Main Skills Grid -->
-                <div class="skills">
-                    <article class="skill-box">
-                        <div class="skill-header">
-                            <div class="skill-icon">
-                                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
-                            </div>
-                            <h3 class="skill-title">Data Science & Programming</h3>
-                        </div>
-                        <p class="skill-description">
-                            3 star coder on LeetCode with 500+ problems solved across all difficulty levels.
-                            Strong foundation in algorithms and data structures.
-                        </p>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">Java</span>
-                            <span class="skill-tag">C++</span>
-                            <span class="skill-tag">DSA</span>
-                        </div>
-                        <div class="skill-level">
-                            <div class="skill-level-bar" style="--skill-width: 85%"></div>
-                        </div>
-                    </article>
-
-                    <article class="skill-box">
-                        <div class="skill-header">
-                            <div class="skill-icon">
-                                <i class="fa-solid fa-code" aria-hidden="true"></i>
-                            </div>
-                            <h3 class="skill-title">Web Development & Design</h3>
-                        </div>
-                        <p class="skill-description">
-                            Full stack web developer and part-time freelancer specializing in creating
-                            responsive and user-friendly web applications.
-                        </p>
-                        <div class="skill-tags">
-                            <span class="skill-tag">HTML/CSS</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">React</span>
-                            <span class="skill-tag">Laravel</span>
-                        </div>
-                        <div class="skill-level">
-                            <div class="skill-level-bar" style="--skill-width: 90%"></div>
-                        </div>
-                    </article>
-
-                    <article class="skill-box">
-                        <div class="skill-header">
-                            <div class="skill-icon">
-                                <i class="fa-solid fa-cloud" aria-hidden="true"></i>
-                            </div>
-                            <h3 class="skill-title">Cloud Computing & Services</h3>
-                        </div>
-                        <p class="skill-description">
-                            Certified in Google Cloud Platform with expertise in building scalable
-                            cloud infrastructure and deployment strategies.
-                        </p>
-                        <div class="skill-tags">
-                            <span class="skill-tag">GCP</span>
-                            <span class="skill-tag">AWS</span>
-                            <span class="skill-tag">Docker</span>
-                            <span class="skill-tag">CI/CD</span>
-                        </div>
-                        <div class="skill-level">
-                            <div class="skill-level-bar" style="--skill-width: 75%"></div>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- Additional Skills -->
-                <div class="additional-skills">
-                    <div class="skill-category">
-                        <div class="category-header">
-                            <i class="fas fa-tools"></i>
-                            <h3>Tools & Technologies</h3>
-                        </div>
-                        <div class="skill-badges">
-                            <span class="badge">Canva</span>
-                            <span class="badge">Photoshop</span>
-                            <span class="badge">Figma</span>
-                            <span class="badge">MySQL</span>
-                            <span class="badge">Git</span>
-                            <span class="badge">VS Code</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <div class="category-header">
-                            <i class="fas fa-chart-line"></i>
-                            <h3>Currently Learning</h3>
-                        </div>
-                        <div class="skill-badges learning">
-                            <span class="badge">React JS</span>
-                            <span class="badge">Python</span>
-                            <span class="badge">Laravel</span>
-                            <span class="badge">Node.js</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <hr class="section-divider" aria-hidden="true">
-
-        <!-- Projects Section -->
+        <!-- Work Section -->
         <section id="work" aria-labelledby="work-heading">
             <div class="projects-container">
                 <div class="work-h1">
-                    <h2 id="work-heading"><span>.</span><span>.</span>Featured Projects</h2>
-                    <p class="projects-subtitle">Some of my recent work</p>
+                    <h2 id="work-heading"><span>.</span><span>.</span>Selected Work</h2>
+                    <p class="projects-subtitle">Case studies from recent projects</p>
                 </div>
 
                 <div class="all-projects">
                     <!-- Project 1 -->
                     <article class="project-card">
-                        <div class="project-image-wrapper">
-                            <img src="https://d1tae6lrnvfibh.cloudfront.net/features/feature30082024_141406.png"
-                                alt="Portfolio Website Project" class="project-image" loading="lazy">
-                            <div class="project-overlay">
-                                <div class="project-overlay-content">
-                                    <a href="#" class="overlay-btn" target="_blank" rel="noopener noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                    <a href="https://github.com/" class="overlay-btn" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
                         <div class="project-content">
                             <div class="project-header">
                                 <span class="project-category">Web Development</span>
                                 <span class="project-status">Completed</span>
                             </div>
                             <h3 class="project-title">Portfolio Website</h3>
-                            <p class="project-description">
-                                A modern, responsive portfolio website built with pure HTML, CSS, and JavaScript.
-                                Features smooth animations, dark theme, and optimized performance.
-                            </p>
+                            <dl class="case-study">
+                                <div>
+                                    <dt>Problem</dt>
+                                    <dd>Needed a fast, accessible personal site to replace a static resume PDF as
+                                        the primary way to be discovered and evaluated.</dd>
+                                </div>
+                                <div>
+                                    <dt>Approach</dt>
+                                    <dd>Built from scratch with semantic HTML, custom CSS design tokens, and
+                                        vanilla JS — no framework overhead for a content-first site.</dd>
+                                </div>
+                                <div>
+                                    <dt>Result</dt>
+                                    <dd>Fully responsive, accessible (WCAG AA contrast, keyboard nav), fast-loading
+                                        single page.</dd>
+                                </div>
+                            </dl>
                             <div class="project-tech">
                                 <span class="tech-badge">HTML5</span>
                                 <span class="tech-badge">CSS3</span>
@@ -311,31 +143,29 @@
 
                     <!-- Project 2 -->
                     <article class="project-card">
-                        <div class="project-image-wrapper">
-                            <img src="https://d1tae6lrnvfibh.cloudfront.net/features/feature30082024_141406.png"
-                                alt="Hostel Management System" class="project-image" loading="lazy">
-                            <div class="project-overlay">
-                                <div class="project-overlay-content">
-                                    <a href="#" class="overlay-btn" target="_blank" rel="noopener noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                    <a href="https://github.com/" class="overlay-btn" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
                         <div class="project-content">
                             <div class="project-header">
                                 <span class="project-category">Full Stack</span>
                                 <span class="project-status">Completed</span>
                             </div>
                             <h3 class="project-title">Hostel Management System</h3>
-                            <p class="project-description">
-                                A comprehensive hostel management platform for students and administrators.
-                                Streamlines facility booking, complaints, and student information management.
-                            </p>
+                            <dl class="case-study">
+                                <div>
+                                    <dt>Problem</dt>
+                                    <dd>Hostel staff tracked room allocation, complaints, and student records
+                                        manually across registers and spreadsheets.</dd>
+                                </div>
+                                <div>
+                                    <dt>Approach</dt>
+                                    <dd>Built a PHP/MySQL platform covering facility booking, complaint tracking,
+                                        and student information in one admin + student view.</dd>
+                                </div>
+                                <div>
+                                    <dt>Result</dt>
+                                    <dd>Replaced manual record-keeping with a searchable, centralized system for
+                                        administrators and residents.</dd>
+                                </div>
+                            </dl>
                             <div class="project-tech">
                                 <span class="tech-badge">PHP</span>
                                 <span class="tech-badge">MySQL</span>
@@ -356,31 +186,29 @@
 
                     <!-- Project 3 -->
                     <article class="project-card">
-                        <div class="project-image-wrapper">
-                            <img src="https://d1tae6lrnvfibh.cloudfront.net/features/feature30082024_141406.png"
-                                alt="AI Traffic Control System" class="project-image" loading="lazy">
-                            <div class="project-overlay">
-                                <div class="project-overlay-content">
-                                    <a href="#" class="overlay-btn" target="_blank" rel="noopener noreferrer">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                    <a href="https://github.com/" class="overlay-btn" target="_blank"
-                                        rel="noopener noreferrer">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
                         <div class="project-content">
                             <div class="project-header">
-                                <span class="project-category">AI/ML</span>
+                                <span class="project-category">AI / ML</span>
                                 <span class="project-status ongoing">In Progress</span>
                             </div>
                             <h3 class="project-title">AI Traffic Control System</h3>
-                            <p class="project-description">
-                                An intelligent traffic management system using computer vision and machine learning
-                                to optimize traffic flow and reduce congestion in urban areas.
-                            </p>
+                            <dl class="case-study">
+                                <div>
+                                    <dt>Problem</dt>
+                                    <dd>Fixed-timer traffic signals cause unnecessary congestion at intersections
+                                        with uneven, time-of-day-dependent traffic flow.</dd>
+                                </div>
+                                <div>
+                                    <dt>Approach</dt>
+                                    <dd>Using computer vision (OpenCV) to estimate real-time vehicle density per
+                                        lane and a Flask service to adjust signal timing dynamically.</dd>
+                                </div>
+                                <div>
+                                    <dt>Result</dt>
+                                    <dd>In development — current focus is validating detection accuracy under
+                                        varied lighting and traffic conditions.</dd>
+                                </div>
+                            </dl>
                             <div class="project-tech">
                                 <span class="tech-badge">Python</span>
                                 <span class="tech-badge">OpenCV</span>
@@ -398,6 +226,86 @@
                             </div>
                         </div>
                     </article>
+                </div>
+            </div>
+        </section>
+
+        <hr class="section-divider" aria-hidden="true">
+
+        <!-- Skills Section -->
+        <section id="skill" aria-labelledby="skills-heading">
+            <div class="skills-container">
+                <div class="skills-h1">
+                    <h2 id="skills-heading"><span>.</span><span>.</span>Skills & Expertise</h2>
+                    <p class="skills-subtitle">Technologies and tools I work with</p>
+                </div>
+
+                <div class="marquee" role="list" aria-label="Technologies I work with">
+                    <div class="marquee-track">
+                        <span class="marquee-item" role="listitem"><i class="fa-brands fa-python"></i> Python</span>
+                        <span class="marquee-item" role="listitem"><i class="fa-brands fa-java"></i> Java</span>
+                        <span class="marquee-item" role="listitem"><i class="fa-solid fa-code"></i> C++</span>
+                        <span class="marquee-item" role="listitem"><i class="fa-brands fa-html5"></i> HTML/CSS</span>
+                        <span class="marquee-item" role="listitem"><i class="fa-brands fa-js"></i> JavaScript</span>
+                        <span class="marquee-item" role="listitem"><i class="fa-brands fa-react"></i> React</span>
+                        <span class="marquee-item" role="listitem"><i class="fa-brands fa-laravel"></i> Laravel</span>
+                        <span class="marquee-item" role="listitem"><i class="fa-brands fa-node-js"></i> Node.js</span>
+                        <span class="marquee-item" role="listitem"><i class="fa-brands fa-google"></i> GCP</span>
+                        <span class="marquee-item" role="listitem"><i class="fa-brands fa-aws"></i> AWS</span>
+                        <span class="marquee-item" role="listitem"><i class="fa-brands fa-docker"></i> Docker</span>
+                        <span class="marquee-item" role="listitem"><i class="fa-brands fa-git-alt"></i> Git</span>
+                        <span class="marquee-item" role="listitem"><i class="fa-solid fa-database"></i> MySQL</span>
+                        <span class="marquee-item" role="listitem"><i class="fa-brands fa-figma"></i> Figma</span>
+                        <!-- duplicated for a seamless loop -->
+                        <span class="marquee-item" aria-hidden="true"><i class="fa-brands fa-python"></i> Python</span>
+                        <span class="marquee-item" aria-hidden="true"><i class="fa-brands fa-java"></i> Java</span>
+                        <span class="marquee-item" aria-hidden="true"><i class="fa-solid fa-code"></i> C++</span>
+                        <span class="marquee-item" aria-hidden="true"><i class="fa-brands fa-html5"></i> HTML/CSS</span>
+                        <span class="marquee-item" aria-hidden="true"><i class="fa-brands fa-js"></i> JavaScript</span>
+                        <span class="marquee-item" aria-hidden="true"><i class="fa-brands fa-react"></i> React</span>
+                        <span class="marquee-item" aria-hidden="true"><i class="fa-brands fa-laravel"></i> Laravel</span>
+                        <span class="marquee-item" aria-hidden="true"><i class="fa-brands fa-node-js"></i> Node.js</span>
+                        <span class="marquee-item" aria-hidden="true"><i class="fa-brands fa-google"></i> GCP</span>
+                        <span class="marquee-item" aria-hidden="true"><i class="fa-brands fa-aws"></i> AWS</span>
+                        <span class="marquee-item" aria-hidden="true"><i class="fa-brands fa-docker"></i> Docker</span>
+                        <span class="marquee-item" aria-hidden="true"><i class="fa-brands fa-git-alt"></i> Git</span>
+                        <span class="marquee-item" aria-hidden="true"><i class="fa-solid fa-database"></i> MySQL</span>
+                        <span class="marquee-item" aria-hidden="true"><i class="fa-brands fa-figma"></i> Figma</span>
+                    </div>
+                </div>
+
+                <!-- Additional Skills -->
+                <div class="additional-skills">
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-laptop-code"></i>
+                            <h3>Data Science & Programming</h3>
+                        </div>
+                        <p class="skill-category-desc">
+                            3-star coder on LeetCode with 500+ problems solved across all difficulty levels.
+                        </p>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-cloud"></i>
+                            <h3>Cloud Computing</h3>
+                        </div>
+                        <p class="skill-category-desc">
+                            GCP-certified, with hands-on experience deploying and scaling cloud infrastructure.
+                        </p>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Currently Learning</h3>
+                        </div>
+                        <div class="skill-badges learning">
+                            <span class="badge">Node.js</span>
+                            <span class="badge">Advanced React</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -520,9 +428,8 @@
                 <h4>Quick Links</h4>
                 <ul class="footer-links">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
                     <li><a href="#skill">Skills</a></li>
-                    <li><a href="#work">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>

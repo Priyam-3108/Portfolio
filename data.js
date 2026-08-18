@@ -1,68 +1,4 @@
 /* ========================================
-   DATA & CONFIGURATION
-   ======================================== */
-
-// About section content data
-const discription = {
-    "about-me": [
-        "IT Engineer",
-        "Developer and Problem Solver",
-        "I like to play outdoor games",
-        "I am a 4th year IT engineering student from SSGEC Bhavnagar. I like to solve competitive problems. I am a quick learner."
-    ],
-    "hobby": [
-        "Playing Cricket, Volleyball, Kabaddi",
-        "Listening to Music",
-        "Traveling, Trekking and Exploring New Things",
-        "Taking amazing Photographs"
-    ],
-    "education": [
-        "SSC completed from Jamjodhpur",
-        "HSC completed from Jamjodhpur",
-        "Cyber Security course by Cisco",
-        "IT Engineering from SSGEC Bhavnagar"
-    ],
-    "achivements": [
-        "Python Programming Course by Google",
-        "Java Course by IIT-Bombay",
-        "Ethical Hacking by Simplilearn",
-        "Participated in National Game 2022 as a Volunteer"
-    ],
-};
-
-/* ========================================
-   ABOUT SECTION - TAB SWITCHING
-   ======================================== */
-
-/**
- * Updates the about section content based on selected tab
- * @param {string} id - The ID of the clicked tab button
- */
-function updateAbout(id) {
-    // Update content
-    const details = discription[id];
-    if (!details) return;
-
-    details.forEach((detail, index) => {
-        const element = document.getElementById(`detail${index + 1}`);
-        if (element) {
-            element.textContent = detail;
-        }
-    });
-
-    // Update ARIA attributes for accessibility
-    const allTabs = document.querySelectorAll('.about-list-items');
-    allTabs.forEach(tab => {
-        tab.setAttribute('aria-selected', 'false');
-    });
-
-    const activeTab = document.getElementById(id);
-    if (activeTab) {
-        activeTab.setAttribute('aria-selected', 'true');
-    }
-}
-
-/* ========================================
    NAVIGATION - MOBILE MENU
    ======================================== */
 
@@ -159,8 +95,8 @@ function initScrollAnimations() {
         observer.observe(section);
     });
 
-    // Observe skill boxes
-    const skillBoxes = document.querySelectorAll('.skill-box, .other-skills-list, .ongoing-skills-list');
+    // Observe skill category cards
+    const skillBoxes = document.querySelectorAll('.skill-category');
     skillBoxes.forEach((box, index) => {
         box.style.opacity = '0';
         box.style.transform = 'translateY(20px)';
@@ -169,7 +105,7 @@ function initScrollAnimations() {
     });
 
     // Observe project cards
-    const projects = document.querySelectorAll('.project1');
+    const projects = document.querySelectorAll('.project-card');
     projects.forEach((project, index) => {
         project.style.opacity = '0';
         project.style.transform = 'translateY(30px)';
@@ -482,26 +418,6 @@ function initKeyboardNavigation() {
         if (e.key === 'Escape' && menuOpen) {
             closeMenu();
         }
-    });
-
-    // Tab navigation for about section
-    const aboutTabs = document.querySelectorAll('.about-list-items');
-    aboutTabs.forEach((tab, index) => {
-        tab.addEventListener('keydown', (e) => {
-            let newIndex;
-
-            if (e.key === 'ArrowRight') {
-                e.preventDefault();
-                newIndex = (index + 1) % aboutTabs.length;
-                aboutTabs[newIndex].focus();
-                aboutTabs[newIndex].click();
-            } else if (e.key === 'ArrowLeft') {
-                e.preventDefault();
-                newIndex = (index - 1 + aboutTabs.length) % aboutTabs.length;
-                aboutTabs[newIndex].focus();
-                aboutTabs[newIndex].click();
-            }
-        });
     });
 }
 
