@@ -365,8 +365,9 @@ a {
     text-transform: none;
     display: inline-block;
     position: relative;
-    min-width: 200px;
     text-align: left;
+    white-space: nowrap;
+    vertical-align: bottom;
 }
 
 .multiText::after {
@@ -392,40 +393,6 @@ a {
         opacity: 0;
     }
 }
-
-/* Word animations */
-.multiText.word-exit {
-    animation: slideUpOut 0.4s ease-in forwards;
-}
-
-.multiText.word-enter {
-    animation: slideInUp 0.4s ease-out forwards;
-}
-
-@keyframes slideUpOut {
-    0% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    100% {
-        opacity: 0;
-        transform: translateY(-8px);
-    }
-}
-
-@keyframes slideInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(8px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 
 .intro-name {
     font-size: var(--fs-h1);
@@ -822,6 +789,23 @@ a {
     margin: 0;
 }
 
+.work-note {
+    max-width: 640px;
+    margin: var(--space-md) auto 0;
+    padding: 10px 18px;
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    color: var(--color-text-muted);
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.work-note i {
+    color: var(--color-accent);
+    margin-right: 6px;
+}
+
 /* Projects List - stacked case studies */
 .all-projects {
     display: flex;
@@ -902,13 +886,13 @@ a {
 
 .project-status {
     padding: 3px 10px;
-    background-color: rgba(34, 197, 94, 0.12);
-    color: var(--color-primary);
+    background-color: rgba(124, 92, 255, 0.14);
+    color: #A692FF;
     border-radius: var(--border-radius-sm);
     font-size: 0.75rem;
     font-family: var(--font-heading);
     font-weight: 500;
-    border: 1px solid rgba(34, 197, 94, 0.3);
+    border: 1px solid rgba(124, 92, 255, 0.35);
 }
 
 .project-status.ongoing {
@@ -921,8 +905,15 @@ a {
     font-family: var(--font-heading);
     color: var(--color-text-light);
     font-size: 1.5rem;
-    margin: 0 0 var(--space-md) 0;
+    margin: 0 0 4px 0;
     line-height: 1.3;
+}
+
+.project-role {
+    display: block;
+    color: var(--color-text-muted);
+    font-size: 0.85rem;
+    margin-bottom: var(--space-md);
 }
 
 /* Tech Badges */
@@ -979,6 +970,38 @@ a {
 
 .project-link i {
     font-size: 0.85rem;
+}
+
+/* Compact project list (secondary projects, reuses .skill-category primitives) */
+.projects-compact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--space-lg);
+    margin-top: var(--space-2xl);
+}
+
+.compact-meta {
+    display: block;
+    color: var(--color-text-muted);
+    font-size: 0.8rem;
+    margin: 4px 0 var(--space-md);
+}
+
+.compact-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+    margin-top: var(--space-md);
+}
+
+.skill-category .project-footer {
+    margin-top: var(--space-md);
+    padding-top: var(--space-md);
+}
+
+.skill-category .project-link {
+    padding: 6px 14px;
+    font-size: 0.8rem;
 }
 
 /* ========================================

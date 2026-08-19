@@ -19,6 +19,7 @@
         content="Full Stack Developer specializing in web development, problem solving, and cloud computing">
     <meta property="og:type" content="website">
 
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -95,135 +96,202 @@
                 <div class="work-h1">
                     <h2 id="work-heading"><span>.</span><span>.</span>Selected Work</h2>
                     <p class="projects-subtitle">Case studies from recent projects</p>
+                    <p class="work-note"><i class="fas fa-lock" aria-hidden="true"></i>Projects built for Crest
+                        Infosystems clients are shown without live links or source access due to client
+                        confidentiality — happy to walk through the architecture in an interview.</p>
                 </div>
 
                 <div class="all-projects">
-                    <!-- Project 1 -->
+                    <!-- RideForti -->
                     <article class="project-card">
                         <div class="project-content">
                             <div class="project-header">
-                                <span class="project-category">Web Development</span>
-                                <span class="project-status">Completed</span>
+                                <span class="project-category">Ride-Sharing Platform</span>
+                                <span class="project-status">Confidential — Crest Infosystems</span>
                             </div>
-                            <h3 class="project-title">Portfolio Website</h3>
+                            <h3 class="project-title">RideForti — Ride-Sharing + Security Booking</h3>
+                            <span class="project-role">Backend API + Admin Panel · mobile app (Flutter) built
+                                by another team</span>
                             <dl class="case-study">
                                 <div>
                                     <dt>Problem</dt>
-                                    <dd>Needed a fast, accessible personal site to replace a static resume PDF as
-                                        the primary way to be discovered and evaluated.</dd>
+                                    <dd>A ride can require a driver plus guards/escorts, with dynamic pricing
+                                        and payouts split across everyone involved.</dd>
                                 </div>
                                 <div>
                                     <dt>Approach</dt>
-                                    <dd>Built from scratch with semantic HTML, custom CSS design tokens, and
-                                        vanilla JS — no framework overhead for a content-first site.</dd>
+                                    <dd>Laravel REST API + admin panel: Stripe Connect split payouts, Gemini
+                                        AI OCR for document extraction, and a cancellation-preview-before-execute
+                                        flow.</dd>
                                 </div>
                                 <div>
                                     <dt>Result</dt>
-                                    <dd>Fully responsive, accessible (WCAG AA contrast, keyboard nav), fast-loading
-                                        single page.</dd>
+                                    <dd>Balance-aware payout retries, per-role OTP ride auth, and Firestore
+                                        mirroring MySQL for near-real-time state.</dd>
                                 </div>
                             </dl>
                             <div class="project-tech">
-                                <span class="tech-badge">HTML5</span>
-                                <span class="tech-badge">CSS3</span>
-                                <span class="tech-badge">JavaScript</span>
-                                <span class="tech-badge">Responsive</span>
-                            </div>
-                            <div class="project-footer">
-                                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
-                                    <i class="fas fa-external-link-alt"></i> Live Demo
-                                </a>
-                                <a href="https://github.com/" class="project-link" target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="fab fa-github"></i> View Code
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 2 -->
-                    <article class="project-card">
-                        <div class="project-content">
-                            <div class="project-header">
-                                <span class="project-category">Full Stack</span>
-                                <span class="project-status">Completed</span>
-                            </div>
-                            <h3 class="project-title">Hostel Management System</h3>
-                            <dl class="case-study">
-                                <div>
-                                    <dt>Problem</dt>
-                                    <dd>Hostel staff tracked room allocation, complaints, and student records
-                                        manually across registers and spreadsheets.</dd>
-                                </div>
-                                <div>
-                                    <dt>Approach</dt>
-                                    <dd>Built a PHP/MySQL platform covering facility booking, complaint tracking,
-                                        and student information in one admin + student view.</dd>
-                                </div>
-                                <div>
-                                    <dt>Result</dt>
-                                    <dd>Replaced manual record-keeping with a searchable, centralized system for
-                                        administrators and residents.</dd>
-                                </div>
-                            </dl>
-                            <div class="project-tech">
-                                <span class="tech-badge">PHP</span>
+                                <span class="tech-badge">Laravel 10</span>
+                                <span class="tech-badge">Stripe Connect</span>
+                                <span class="tech-badge">Google Gemini API</span>
+                                <span class="tech-badge">Firestore</span>
                                 <span class="tech-badge">MySQL</span>
-                                <span class="tech-badge">Bootstrap</span>
-                                <span class="tech-badge">jQuery</span>
-                            </div>
-                            <div class="project-footer">
-                                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
-                                    <i class="fas fa-external-link-alt"></i> Live Demo
-                                </a>
-                                <a href="https://github.com/" class="project-link" target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="fab fa-github"></i> View Code
-                                </a>
                             </div>
                         </div>
                     </article>
 
-                    <!-- Project 3 -->
+                    <!-- LivestockPro -->
                     <article class="project-card">
                         <div class="project-content">
                             <div class="project-header">
-                                <span class="project-category">AI / ML</span>
-                                <span class="project-status ongoing">In Progress</span>
+                                <span class="project-category">Multi-Tenant SaaS</span>
+                                <span class="project-status">Confidential — Crest Infosystems</span>
                             </div>
-                            <h3 class="project-title">AI Traffic Control System</h3>
+                            <h3 class="project-title">LivestockPro — Farm Management SaaS + AI Agent</h3>
+                            <span class="project-role">Full Stack Developer</span>
                             <dl class="case-study">
                                 <div>
                                     <dt>Problem</dt>
-                                    <dd>Fixed-timer traffic signals cause unnecessary congestion at intersections
-                                        with uneven, time-of-day-dependent traffic flow.</dd>
+                                    <dd>Paper/spreadsheet herd record-keeping doesn't scale — farmers need
+                                        structured records, automated valuation, and answers without SQL.</dd>
                                 </div>
                                 <div>
                                     <dt>Approach</dt>
-                                    <dd>Using computer vision (OpenCV) to estimate real-time vehicle density per
-                                        lane and a Flask service to adjust signal timing dynamically.</dd>
+                                    <dd>Laravel monolith (286 migrations) plus a nightly AI valuation pipeline,
+                                        and a separate FastAPI service — the LivestockPro AI Agent — giving
+                                        natural-language database access via the OpenAI Agents SDK.</dd>
                                 </div>
                                 <div>
                                     <dt>Result</dt>
-                                    <dd>In development — current focus is validating detection accuracy under
-                                        varied lighting and traffic conditions.</dd>
+                                    <dd>Tenant isolation enforced at the query layer, plus hallucination-safe
+                                        ID-indirection on every AI-estimated price.</dd>
                                 </div>
                             </dl>
                             <div class="project-tech">
-                                <span class="tech-badge">Python</span>
-                                <span class="tech-badge">OpenCV</span>
-                                <span class="tech-badge">TensorFlow</span>
-                                <span class="tech-badge">Flask</span>
+                                <span class="tech-badge">Laravel 7</span>
+                                <span class="tech-badge">Python / FastAPI</span>
+                                <span class="tech-badge">OpenAI Agents SDK</span>
+                                <span class="tech-badge">MySQL</span>
+                                <span class="tech-badge">Stripe</span>
                             </div>
-                            <div class="project-footer">
-                                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
-                                    <i class="fas fa-external-link-alt"></i> Live Demo
-                                </a>
-                                <a href="https://github.com/" class="project-link" target="_blank"
-                                    rel="noopener noreferrer">
-                                    <i class="fab fa-github"></i> View Code
-                                </a>
+                        </div>
+                    </article>
+
+                    <!-- MerchDominator -->
+                    <article class="project-card">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <span class="project-category">Research SaaS</span>
+                                <span class="project-status">Confidential — Crest Infosystems</span>
                             </div>
+                            <h3 class="project-title">MerchDominator — Print-on-Demand Research SaaS</h3>
+                            <span class="project-role">Full Stack Developer</span>
+                            <dl class="case-study">
+                                <div>
+                                    <dt>Problem</dt>
+                                    <dd>POD sellers need niche research, trademark-conflict checking, and AI
+                                        listing generation in one place.</dd>
+                                </div>
+                                <div>
+                                    <dt>Approach</dt>
+                                    <dd>Laravel monolith spanning three databases by access pattern (MySQL,
+                                        MongoDB, Elasticsearch), with Amazon scraping isolated into its own
+                                        microservice.</dd>
+                                </div>
+                                <div>
+                                    <dt>Result</dt>
+                                    <dd>A working trademark ingestion → Elasticsearch pipeline, and
+                                        credit-gated AI features with free-tier cost control.</dd>
+                                </div>
+                            </dl>
+                            <div class="project-tech">
+                                <span class="tech-badge">Laravel 8</span>
+                                <span class="tech-badge">MySQL</span>
+                                <span class="tech-badge">MongoDB</span>
+                                <span class="tech-badge">Elasticsearch</span>
+                                <span class="tech-badge">Redis</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Compact project list -->
+                <div class="projects-compact">
+                    <article class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-prescription-bottle-medical" aria-hidden="true"></i>
+                            <h3>Margie</h3>
+                        </div>
+                        <span class="compact-meta">Backend API + AWS Lambda · Confidential</span>
+                        <p class="skill-category-desc">Pharmacy benefits / prior-authorization platform —
+                            real-time drug pricing integration and a dynamic PA form-builder pipeline.</p>
+                        <div class="compact-tech">
+                            <span class="tech-badge">Laravel</span>
+                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge">AWS Lambda</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-wallet" aria-hidden="true"></i>
+                            <h3>Expense Tracker</h3>
+                        </div>
+                        <span class="compact-meta">Full Stack + Mobile App · Personal project</span>
+                        <p class="skill-category-desc">Solo-built expense tracker: React web, a React
+                            Native/Expo mobile app with offline-first sync, and a Node/MongoDB API.</p>
+                        <div class="compact-tech">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">React Native</span>
+                            <span class="tech-badge">Node.js</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="http://expense.priyamtech.in/" class="project-link" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-industry" aria-hidden="true"></i>
+                            <h3>Bigwin Buildsys</h3>
+                        </div>
+                        <span class="compact-meta">Frontend · Freelance</span>
+                        <p class="skill-category-desc">5-page marketing site for a solar/steel manufacturer —
+                            static HTML/CSS/JS with Web3Forms lead capture.</p>
+                        <div class="compact-tech">
+                            <span class="tech-badge">HTML5</span>
+                            <span class="tech-badge">CSS3</span>
+                            <span class="tech-badge">JavaScript</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://priyam-3108.github.io/Bigwin/" class="project-link" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Live Site
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-warehouse" aria-hidden="true"></i>
+                            <h3>SPANO Industry</h3>
+                        </div>
+                        <span class="compact-meta">Frontend · Freelance</span>
+                        <p class="skill-category-desc">Marketing/catalog site for a racking manufacturer —
+                            Next.js, statically exported, with a hand-built 3D product carousel.</p>
+                        <div class="compact-tech">
+                            <span class="tech-badge">Next.js</span>
+                            <span class="tech-badge">TypeScript</span>
+                            <span class="tech-badge">Tailwind CSS</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://priyam-3108.github.io/Spano-Industry/" class="project-link"
+                                target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> Live Site
+                            </a>
                         </div>
                     </article>
                 </div>
@@ -242,35 +310,37 @@
 
                 <div class="marquee" role="list" aria-label="Technologies I work with">
                     <div class="marquee-track">
-                        <span class="marquee-item" role="listitem"><i class="fa-brands fa-python"></i> Python</span>
-                        <span class="marquee-item" role="listitem"><i class="fa-brands fa-java"></i> Java</span>
-                        <span class="marquee-item" role="listitem"><i class="fa-solid fa-code"></i> C++</span>
-                        <span class="marquee-item" role="listitem"><i class="fa-brands fa-html5"></i> HTML/CSS</span>
-                        <span class="marquee-item" role="listitem"><i class="fa-brands fa-js"></i> JavaScript</span>
-                        <span class="marquee-item" role="listitem"><i class="fa-brands fa-react"></i> React</span>
                         <span class="marquee-item" role="listitem"><i class="fa-brands fa-laravel"></i> Laravel</span>
+                        <span class="marquee-item" role="listitem"><i class="fa-brands fa-php"></i> PHP</span>
+                        <span class="marquee-item" role="listitem"><i class="fa-brands fa-python"></i> Python</span>
+                        <span class="marquee-item" role="listitem"><i class="fa-solid fa-bolt"></i> FastAPI</span>
+                        <span class="marquee-item" role="listitem"><i class="fa-solid fa-robot"></i> OpenAI API</span>
+                        <span class="marquee-item" role="listitem"><i class="fa-brands fa-react"></i> React</span>
+                        <span class="marquee-item" role="listitem"><i class="fa-solid fa-mobile-screen"></i> React Native</span>
                         <span class="marquee-item" role="listitem"><i class="fa-brands fa-node-js"></i> Node.js</span>
-                        <span class="marquee-item" role="listitem"><i class="fa-brands fa-google"></i> GCP</span>
-                        <span class="marquee-item" role="listitem"><i class="fa-brands fa-aws"></i> AWS</span>
-                        <span class="marquee-item" role="listitem"><i class="fa-brands fa-docker"></i> Docker</span>
-                        <span class="marquee-item" role="listitem"><i class="fa-brands fa-git-alt"></i> Git</span>
+                        <span class="marquee-item" role="listitem"><i class="fa-solid fa-layer-group"></i> Next.js</span>
                         <span class="marquee-item" role="listitem"><i class="fa-solid fa-database"></i> MySQL</span>
-                        <span class="marquee-item" role="listitem"><i class="fa-brands fa-figma"></i> Figma</span>
+                        <span class="marquee-item" role="listitem"><i class="fa-solid fa-leaf"></i> MongoDB</span>
+                        <span class="marquee-item" role="listitem"><i class="fa-brands fa-aws"></i> AWS Lambda</span>
+                        <span class="marquee-item" role="listitem"><i class="fa-brands fa-stripe"></i> Stripe</span>
+                        <span class="marquee-item" role="listitem"><i class="fa-solid fa-magnifying-glass"></i> Elasticsearch</span>
+                        <span class="marquee-item" role="listitem"><i class="fa-brands fa-git-alt"></i> Git</span>
                         <!-- duplicated for a seamless loop -->
-                        <span class="marquee-item" aria-hidden="true"><i class="fa-brands fa-python"></i> Python</span>
-                        <span class="marquee-item" aria-hidden="true"><i class="fa-brands fa-java"></i> Java</span>
-                        <span class="marquee-item" aria-hidden="true"><i class="fa-solid fa-code"></i> C++</span>
-                        <span class="marquee-item" aria-hidden="true"><i class="fa-brands fa-html5"></i> HTML/CSS</span>
-                        <span class="marquee-item" aria-hidden="true"><i class="fa-brands fa-js"></i> JavaScript</span>
-                        <span class="marquee-item" aria-hidden="true"><i class="fa-brands fa-react"></i> React</span>
                         <span class="marquee-item" aria-hidden="true"><i class="fa-brands fa-laravel"></i> Laravel</span>
+                        <span class="marquee-item" aria-hidden="true"><i class="fa-brands fa-php"></i> PHP</span>
+                        <span class="marquee-item" aria-hidden="true"><i class="fa-brands fa-python"></i> Python</span>
+                        <span class="marquee-item" aria-hidden="true"><i class="fa-solid fa-bolt"></i> FastAPI</span>
+                        <span class="marquee-item" aria-hidden="true"><i class="fa-solid fa-robot"></i> OpenAI API</span>
+                        <span class="marquee-item" aria-hidden="true"><i class="fa-brands fa-react"></i> React</span>
+                        <span class="marquee-item" aria-hidden="true"><i class="fa-solid fa-mobile-screen"></i> React Native</span>
                         <span class="marquee-item" aria-hidden="true"><i class="fa-brands fa-node-js"></i> Node.js</span>
-                        <span class="marquee-item" aria-hidden="true"><i class="fa-brands fa-google"></i> GCP</span>
-                        <span class="marquee-item" aria-hidden="true"><i class="fa-brands fa-aws"></i> AWS</span>
-                        <span class="marquee-item" aria-hidden="true"><i class="fa-brands fa-docker"></i> Docker</span>
-                        <span class="marquee-item" aria-hidden="true"><i class="fa-brands fa-git-alt"></i> Git</span>
+                        <span class="marquee-item" aria-hidden="true"><i class="fa-solid fa-layer-group"></i> Next.js</span>
                         <span class="marquee-item" aria-hidden="true"><i class="fa-solid fa-database"></i> MySQL</span>
-                        <span class="marquee-item" aria-hidden="true"><i class="fa-brands fa-figma"></i> Figma</span>
+                        <span class="marquee-item" aria-hidden="true"><i class="fa-solid fa-leaf"></i> MongoDB</span>
+                        <span class="marquee-item" aria-hidden="true"><i class="fa-brands fa-aws"></i> AWS Lambda</span>
+                        <span class="marquee-item" aria-hidden="true"><i class="fa-brands fa-stripe"></i> Stripe</span>
+                        <span class="marquee-item" aria-hidden="true"><i class="fa-solid fa-magnifying-glass"></i> Elasticsearch</span>
+                        <span class="marquee-item" aria-hidden="true"><i class="fa-brands fa-git-alt"></i> Git</span>
                     </div>
                 </div>
 
@@ -278,33 +348,36 @@
                 <div class="additional-skills">
                     <div class="skill-category">
                         <div class="category-header">
-                            <i class="fas fa-laptop-code"></i>
-                            <h3>Data Science & Programming</h3>
+                            <i class="fas fa-server"></i>
+                            <h3>Backend & AI Integration</h3>
                         </div>
                         <p class="skill-category-desc">
-                            3-star coder on LeetCode with 500+ problems solved across all difficulty levels.
+                            Laravel and FastAPI APIs in production, with real OpenAI/Gemini integrations —
+                            agentic query tools, AI-assisted pricing, document OCR, and prompt-injection
+                            guardrails.
+                        </p>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-database"></i>
+                            <h3>Data & Payments</h3>
+                        </div>
+                        <p class="skill-category-desc">
+                            MySQL, MongoDB, and Elasticsearch chosen per access pattern; Stripe Connect for
+                            split payouts and subscription billing.
                         </p>
                     </div>
 
                     <div class="skill-category">
                         <div class="category-header">
                             <i class="fas fa-cloud"></i>
-                            <h3>Cloud Computing</h3>
+                            <h3>Cloud & DevOps</h3>
                         </div>
                         <p class="skill-category-desc">
-                            GCP-certified, with hands-on experience deploying and scaling cloud infrastructure.
+                            AWS (Lambda, S3), GCP-certified, Redis-backed queues and caching, CI/CD pipelines
+                            for static and server-rendered deployments.
                         </p>
-                    </div>
-
-                    <div class="skill-category">
-                        <div class="category-header">
-                            <i class="fas fa-chart-line"></i>
-                            <h3>Currently Learning</h3>
-                        </div>
-                        <div class="skill-badges learning">
-                            <span class="badge">Node.js</span>
-                            <span class="badge">Advanced React</span>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -467,35 +540,45 @@
 
     <!-- Custom Word Rotation Animation -->
     <script>
-        // Words to rotate through
-        const words = ["Learner", "Designer", "Coder", "Portraitist", "Video Editor"];
-        let currentIndex = 0;
+        // Words to rotate through (typewriter effect)
+        const words = ["Learner", "Designer", "Coder", "Video Editor", "Problem Solver", "Photographer", "Engineer"];
         const multiTextElement = document.querySelector('.multiText');
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-        function rotateWord() {
-            // Add exit animation class
-            multiTextElement.classList.add('word-exit');
+        let wordIndex = 0;
+        let charIndex = 0;
+        let deleting = false;
 
-            setTimeout(() => {
-                // Change the word
-                currentIndex = (currentIndex + 1) % words.length;
-                multiTextElement.textContent = words[currentIndex];
+        function typeWord() {
+            const word = words[wordIndex];
 
-                // Remove exit class and add enter class
-                multiTextElement.classList.remove('word-exit');
-                multiTextElement.classList.add('word-enter');
-
-                setTimeout(() => {
-                    multiTextElement.classList.remove('word-enter');
-                }, 600);
-            }, 600);
+            if (!deleting) {
+                charIndex++;
+                multiTextElement.textContent = word.slice(0, charIndex);
+                if (charIndex === word.length) {
+                    deleting = true;
+                    setTimeout(typeWord, 1400);
+                    return;
+                }
+                setTimeout(typeWord, 90);
+            } else {
+                charIndex--;
+                multiTextElement.textContent = word.slice(0, charIndex);
+                if (charIndex === 0) {
+                    deleting = false;
+                    wordIndex = (wordIndex + 1) % words.length;
+                    setTimeout(typeWord, 300);
+                    return;
+                }
+                setTimeout(typeWord, 45);
+            }
         }
 
-        // Set initial word
-        multiTextElement.textContent = words[0];
-
-        // Start rotation
-        setInterval(rotateWord, 3000);
+        if (reduceMotion) {
+            multiTextElement.textContent = words[0];
+        } else {
+            typeWord();
+        }
     </script>
 
     <!-- EmailJS Integration -->
